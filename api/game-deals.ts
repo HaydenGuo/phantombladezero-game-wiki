@@ -1,4 +1,4 @@
-import { site } from '../src/config/site';
+import { site } from '../src/config/site.js';
 
 const REGION = 'US';
 const USER_AGENT = 'GameWikiTemplate/1.0 (https://github.com/HaydenGuo/GameWikiTemplate)';

@@ -78,6 +78,7 @@
     "@iconify-json/lucide": "^1.2.123",
     "@resvg/resvg-js": "^2.6.2",
     "@tailwindcss/typography": "^0.5.16",
+    "@types/node": "^24.13.3",
     "@typescript-eslint/eslint-plugin": "^8.18.1",
     "@typescript-eslint/parser": "^8.18.1",
     "eslint": "^9.17.0",
