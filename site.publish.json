@@ -24,7 +24,7 @@
     "repo": "phantombladezero-game-wiki",
     "defaultBranch": "main",
     "visibility": "public",
-    "commitMessage": "Initialize Phantom Blade Zero wiki"
+    "commitMessage": "Configure GA4 and Search Console integrations"
   },
   "vercel": {
     "enabled": true,
@@ -56,12 +56,24 @@
     ]
   },
   "analytics": {
-    "enablePropertySetup": false,
-    "gaIdEnv": ""
+    "enablePropertySetup": true,
+    "gaIdEnv": "PUBLIC_GA_ID",
+    "googleOAuthProfileRef": "default",
+    "accountId": "404077639",
+    "propertyDisplayName": "phantombladezero-game-wiki",
+    "propertyTimeZone": "Asia/Shanghai",
+    "propertyCurrencyCode": "USD",
+    "dataStreamDisplayName": "phantombladezero-game-wiki Web",
+    "dataStreamDefaultUri": "https://phantombladezero-game.wiki"
   },
   "searchConsole": {
-    "enabled": false,
-    "enablePropertySetup": false,
+    "enabled": true,
+    "enablePropertySetup": true,
+    "googleOAuthProfileRef": "default",
+    "enableSitemapSubmit": true,
+    "enableIndexInspection": false,
+    "propertyVerificationAttempts": 6,
+    "propertyVerificationDelaySeconds": 10,
     "siteUrl": "sc-domain:phantombladezero-game.wiki",
     "sitemapUrl": "https://phantombladezero-game.wiki/sitemap-index.xml"
   }

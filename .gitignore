@@ -74,3 +74,5 @@ publish-artifacts/
 publish-artifacts-test/
 publish-reports/
 domain-binding-status.json
+stage5-integration-evidence.json
+stage5-integration-evidence.md
