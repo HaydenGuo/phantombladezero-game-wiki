@@ -13,6 +13,19 @@ const YOUTUBE_HOSTS = new Set(['youtube.com', 'www.youtube.com', 'youtu.be', 'ww
 const STEAM_HOSTS = new Set(['store.steampowered.com', 'steamcommunity.com', 'www.steamcommunity.com']);
 const REDDIT_HOSTS = new Set(['reddit.com', 'www.reddit.com', 'old.reddit.com', 'np.reddit.com']);
 
+/** Stage 5 publication boundary; trusted research pages do not override it. */
+export function isAllowedPublicSourceDomain(value: string): boolean {
+  try {
+    const url = new URL(value);
+    if (!/^https?:$/.test(url.protocol) || url.username || url.password) return false;
+    const host = url.hostname.toLowerCase();
+    return ['steampowered.com', 'steamcommunity.com', 'youtube.com', 'youtu.be', 'reddit.com']
+      .some((platform) => host === platform || host.endsWith(`.${platform}`));
+  } catch {
+    return false;
+  }
+}
+
 function normalizePath(pathname: string): string {
   const normalized = pathname.replace(/\/+/g, '/').replace(/\/+$|^$/, '');
   return normalized ? `/${normalized.replace(/^\//, '')}` : '/';

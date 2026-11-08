@@ -60,6 +60,7 @@
     "apply-template": "tsx scripts/apply-template.ts",
     "check-i18n": "tsx scripts/check-i18n.ts",
     "check-links": "tsx scripts/check-links.ts",
+    "check-source-domains": "tsx scripts/check-source-domains.ts",
     "check-content": "tsx scripts/check-content.ts",
     "refresh-audit": "tsx scripts/refresh-audit.ts"
   },

@@ -12,11 +12,11 @@
 @layer base {
   :root {
     /* Light mode theme color — calm blue for a focused guide surface. */
-    --brand: 222 82% 58%;
-    --brand-light: 222 90% 68%;
+    --brand: 3 59% 39%;
+    --brand-light: 3 59% 49%;
     /* Split H/S for derived shades (e.g. darker button backgrounds). */
-    --brand-h: 222;
-    --brand-s: 82%;
+    --brand-h: 3;
+    --brand-s: 59%;
     /* Text-safe shade of the brand: --brand at 52% lightness is only 3.1:1
        on white (WCAG AA needs 4.5:1 for text). Derived from the H/S splits,
        so fork themes that only edit --brand/--brand-light stay consistent. */
@@ -25,10 +25,10 @@
 
   .dark {
     /* Dark mode theme color — slightly deeper. */
-    --brand: 222 84% 64%;
-    --brand-light: 222 92% 74%;
-    --brand-h: 222;
-    --brand-s: 84%;
+    --brand: 3 54% 35%;
+    --brand-light: 3 54% 45%;
+    --brand-h: 3;
+    --brand-s: 54%;
     --brand-text: var(--brand-h) var(--brand-s) 72%;
   }
 }

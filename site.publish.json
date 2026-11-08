@@ -1,0 +1,68 @@
+{
+  "siteName": "phantombladezero-game-wiki",
+  "domain": "phantombladezero-game.wiki",
+  "canonicalHost": "phantombladezero-game.wiki",
+  "publishPaths": [
+    "site.publish.json",
+    "site.template.json",
+    ".env.example",
+    ".gitignore",
+    "src",
+    "public",
+    "scripts",
+    "api",
+    "migrations",
+    "tests",
+    "docs/template-baseline.json",
+    "package.json",
+    "pnpm-lock.yaml"
+  ],
+  "envSync": [],
+  "github": {
+    "enabled": true,
+    "owner": "HaydenGuo",
+    "repo": "phantombladezero-game-wiki",
+    "defaultBranch": "main",
+    "visibility": "public",
+    "commitMessage": "Initialize Phantom Blade Zero wiki"
+  },
+  "vercel": {
+    "enabled": true,
+    "projectName": "phantombladezero-game-wiki",
+    "projectId": "prj_4fsVE54loSu90BYeRHGQ3SDKfkFg",
+    "teamId": "team_ZZ1CvBnc1VXzmY6mrrtH86YA",
+    "production": true,
+    "bindDomains": true,
+    "domains": [
+      {
+        "name": "phantombladezero-game.wiki"
+      }
+    ]
+  },
+  "domainBinding": {
+    "registrar": "spaceship",
+    "dnsProvider": "spaceship",
+    "spaceship": {
+      "apiKeyEnv": "SPACESHIP_API_KEY",
+      "apiSecretEnv": "SPACESHIP_API_SECRET"
+    },
+    "dnsRecords": [
+      {
+        "address": "76.76.21.21",
+        "name": "@",
+        "type": "A",
+        "ttl": 3600
+      }
+    ]
+  },
+  "analytics": {
+    "enablePropertySetup": false,
+    "gaIdEnv": ""
+  },
+  "searchConsole": {
+    "enabled": false,
+    "enablePropertySetup": false,
+    "siteUrl": "sc-domain:phantombladezero-game.wiki",
+    "sitemapUrl": "https://phantombladezero-game.wiki/sitemap-index.xml"
+  }
+}

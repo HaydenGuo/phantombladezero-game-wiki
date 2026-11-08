@@ -51,15 +51,35 @@ export interface NavigationSubgroup {
 }
 
 export const NAVIGATION_CONFIG: NavigationItem[] = [
-  { key: 'guides', path: '/guides', icon: 'lucide:book-open', isContentType: true, order: 1 },
-  { key: 'builds', path: '/builds', icon: 'lucide:hammer', isContentType: true, order: 2 },
-  { key: 'items', path: '/items', icon: 'lucide:package', isContentType: true, order: 3 },
-  { key: 'maps', path: '/maps', icon: 'lucide:map', isContentType: true, order: 4 },
-  { key: 'bosses', path: '/bosses', icon: 'lucide:swords', isContentType: true, order: 5 },
-  { key: 'tier-list', path: '/tier-list', icon: 'lucide:bar-chart-3', isContentType: true, order: 6 },
-  { key: 'news', path: '/news', icon: 'lucide:newspaper', isContentType: true, order: 7 },
-  { key: 'codes', path: '/codes', icon: 'lucide:gift', isContentType: true, order: 8 },
-  { key: 'deals', path: '/deals', icon: 'lucide:badge-percent', isContentType: false, order: 9, showInPrimaryNavigation: false },
+  { key: 'nav-01', path: '/nav-01', icon: 'lucide:info', isContentType: true, order: 1, navigationMode: 'primary',
+    subnavigations: [
+
+    ] },
+  { key: 'nav-02', path: '/nav-02', icon: 'lucide:info', isContentType: true, order: 2, navigationMode: 'primary',
+    subnavigations: [
+
+    ] },
+  { key: 'nav-03', path: '/nav-03', icon: 'lucide:info', isContentType: true, order: 3, navigationMode: 'primary',
+    subnavigations: [
+
+    ] },
+  { key: 'nav-04', path: '/nav-04', icon: 'lucide:info', isContentType: true, order: 4, navigationMode: 'primary',
+    subnavigations: [
+
+    ] },
+  { key: 'nav-05', path: '/nav-05', icon: 'lucide:info', isContentType: true, order: 5, navigationMode: 'primary',
+    subnavigations: [
+
+    ] },
+  { key: 'nav-06', path: '/nav-06', icon: 'lucide:info', isContentType: true, order: 6, navigationMode: 'primary',
+    subnavigations: [
+
+    ] },
+  { key: 'nav-07', path: '/nav-07', icon: 'lucide:info', isContentType: true, order: 7, navigationMode: 'primary',
+    subnavigations: [
+
+    ] },
+  { key: 'deals', path: '/deals', icon: 'lucide:badge-percent', isContentType: false, showInPrimaryNavigation: false, order: 8 },
 ];
 
 /**

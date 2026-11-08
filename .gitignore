@@ -54,3 +54,22 @@ seo-reports/
 
 .env*
 !.env.example
+
+# Release-local output and protected configuration
+.next/
+out/
+.npm-cache/
+.next-dev.log
+.next-dev.err.log
+dev-server.log
+dev-server.err.log
+*.tsbuildinfo
+.vercel
+!.env.publish.example
+.env.publish.local
+publish-report.md
+index-report.json
+seo-audit-report.json
+publish-artifacts/
+publish-artifacts-test/
+publish-reports/

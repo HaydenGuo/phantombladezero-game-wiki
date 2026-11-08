@@ -1,11 +1,11 @@
 {
   "$schema": "../../docs/home.schema.json",
   "site": {
-    "name": "Anvil Quest Preview Guides Wiki",
-    "shortName": "AQG Wiki",
-    "description": "Preview of the GameWikiSoleTemplate guides homepage preset.",
-    "tagline": "Guides-first preview",
-    "legalNotice": "Fan-made preview site."
+    "name": "Phantom Blade Zero Wiki",
+    "shortName": "Phantom Blade Zero Guides",
+    "description": "Phantom Blade Zero guides for combat, builds, bosses, quests and endings, with platform comparisons, maps and player resources.",
+    "tagline": "Routes, combat and decisions for the Wulin world",
+    "legalNotice": "Independent fan-made guide site. Not affiliated with or endorsed by S-GAME."
   },
   "nav": {
     "home": "Home",
@@ -14,6 +14,7 @@
     "close": "Close",
     "search": "Search",
     "language": "Language",
+    "deals": "Deals",
     "guides": "Guides",
     "builds": "Builds",
     "items": "Items",
@@ -22,7 +23,13 @@
     "tier-list": "Tier List",
     "news": "News",
     "codes": "Codes",
-    "deals": "Deals"
+    "nav-01": "Guides",
+    "nav-02": "Builds",
+    "nav-03": "Bosses",
+    "nav-04": "Maps",
+    "nav-05": "Items",
+    "nav-06": "Reviews",
+    "nav-07": "Game Info"
   },
   "search": {
     "placeholder": "Search the wiki...",
@@ -150,6 +157,10 @@
     }
   },
   "overview": {
+    "deals": {
+      "overviewTitle": "Game Deals",
+      "overviewDescription": "Browse game deals, compare live Steam pricing and player activity, and find current lower offers from participating retailers."
+    },
     "guides": {
       "overviewTitle": "All Guides",
       "overviewDescription": "Guides content for Anvil Quest Preview Guides. Replace this overview text in the locale JSON — it feeds the category page title and description."
@@ -182,48 +193,134 @@
       "overviewTitle": "Recent News",
       "overviewDescription": "News content for Anvil Quest Preview Guides. Replace this overview text in the locale JSON — it feeds the category page title and description."
     },
-    "deals": {
-      "overviewTitle": "Game Deals",
-      "overviewDescription": "Browse game deals, compare live Steam pricing and player activity, and find current lower offers from participating retailers."
+    "nav-01": {
+      "overviewTitle": "All Guides",
+      "overviewDescription": "Browse guides pages for Phantom Blade Zero."
+    },
+    "nav-02": {
+      "overviewTitle": "All Builds",
+      "overviewDescription": "Browse builds pages for Phantom Blade Zero."
+    },
+    "nav-03": {
+      "overviewTitle": "All Bosses",
+      "overviewDescription": "Browse bosses pages for Phantom Blade Zero."
+    },
+    "nav-04": {
+      "overviewTitle": "All Maps",
+      "overviewDescription": "Browse maps pages for Phantom Blade Zero."
+    },
+    "nav-05": {
+      "overviewTitle": "All Items",
+      "overviewDescription": "Browse items pages for Phantom Blade Zero."
+    },
+    "nav-06": {
+      "overviewTitle": "All Reviews",
+      "overviewDescription": "Browse reviews pages for Phantom Blade Zero."
+    },
+    "nav-07": {
+      "overviewTitle": "All Game Info",
+      "overviewDescription": "Browse game info pages for Phantom Blade Zero."
     }
   },
   "home": {
     "meta": {
-      "title": "Anvil Quest Preview Guides Wiki — Guides, Bosses & Progression",
-      "description": "Preview of the GameWikiSoleTemplate guides homepage preset."
+      "title": "Phantom Blade Zero Guides — Combat, Quests and Endings",
+      "description": "Find Phantom Blade Zero combat tips, equipment choices, boss strategies, quest routes, maps and ending requirements in one independent guide collection."
     },
     "updates": {
       "title": "Recent updates"
     },
-    "popular": {
-      "badge": "Popular",
-      "title": "Most read",
-      "quickLinks": [
+    "decisionGuide": {
+      "eyebrow": "Choose your route",
+      "title": "Where would you like to look?",
+      "description": "Browse the categories selected for this game site and open the topic that matches your question.",
+      "routeLabel": "routes",
+      "groups": [
         {
-          "label": "Guides",
-          "href": "/guides"
+          "label": "Choose your starting point",
+          "image": "/images/home/decision-new.webp",
+          "directions": [
+            {
+              "title": "Phantom Blade Zero on Steam or PS5: Which Edition to Buy",
+              "question": "Buy Phantom Blade Zero Standard on Steam if your Windows PC meets the requirements below, or buy Standard on PlayStation Store if you will play on PS5. Standard is the recommended starting purchase on either platform. Choose Digital Deluxe only if you want its two exclusive outfits, digital art book and soundtrack.",
+              "href": "/nav-07/buying-and-platform-availability/"
+            },
+            {
+              "title": "Is Phantom Blade Zero a Soulslike? The Differences That Matter",
+              "question": "Phantom Blade Zero is a wuxia action RPG. “Soulslike” describes some recognizable features—dangerous bosses, defensive timing and connected environments—but it is an incomplete guide to how the game plays. Difficulty options, fast weapon switching and forgiving boss-phase restarts change the experience substantially.",
+              "href": "/nav-01/genre-and-gameplay-style/"
+            },
+            {
+              "title": "Phantom Blade Zero Difficulty: Pick the Right Challenge",
+              "question": "Start with Pathbreaker if you want to learn the full combat rhythm without immediately choosing the harshest challenge. Choose Wayfarer if enjoying the story and martial-arts spectacle matters more than repeated boss practice. Choose Hellwalker if you actively want more demanding opponents.",
+              "href": "/nav-01/difficulty-and-challenge/"
+            }
+          ]
         },
         {
-          "label": "Codes",
-          "href": "/codes"
+          "label": "Prepare for the next fight",
+          "image": "/images/home/decision-progress.webp",
+          "directions": [
+            {
+              "title": "Phantom Blade Zero Combat Guide: Parry, Dodge and Keep Pressure",
+              "question": "Learn three habits first: respond to blue attacks with a timed parry, evade red attacks, and switch weapons before poor Sha-Chi management leaves you helpless. Then use short, reliable combinations during openings. Phantom Blade Zero rewards aggressive fighting, but sustainable aggression depends on recognizing when an enemy is still attacking.",
+              "href": "/nav-01/beginner-combat-tips/"
+            },
+            {
+              "title": "Phantom Blade Zero Weapons: What to Equip and Upgrade First",
+              "question": "Use Jagged Steel as your early damage weapon, add Outlaw Warblade for healing once you reach Jing Ye, and equip Reflex Device while learning parries and perfect dodges. For Phantom Edges, start with Dread Axe for guard pressure and Hunter’s Chain Sickle for reach.",
+              "href": "/nav-02/weapons-and-equipment/"
+            },
+            {
+              "title": "Phantom Blade Zero Bosses: Beat Peng Meng and Gold Mask",
+              "question": "Against Peng Meng, parry blue axe attacks, dodge the red grab and wait for the whole combination to end before punishing. Against the first Gold-Masked One, create openings with timed defense and Sha-Chi breaks instead of forcing repeated free swings.",
+              "href": "/nav-03/boss-fights/"
+            }
+          ]
         },
         {
-          "label": "Bosses",
-          "href": "/bosses"
+          "label": "Follow your route",
+          "image": "/images/home/decision-endgame.webp",
+          "directions": [
+            {
+              "title": "Phantom Blade Zero Walkthrough: Forest, Keys and Lake Route",
+              "question": "Crimson Forest is both a campaign region and a place you revisit as side tales develop. Before leaving its first major story phase, check Yu’er’s healer objectives and the Baishan tale; later progress changes what you can reach and which encounters appear.",
+              "href": "/nav-01/walkthrough-and-progression/"
+            },
+            {
+              "title": "Phantom Blade Zero Map: Find the Right Region and Route",
+              "question": "For a regional interactive map, start with MapGenie’s Phantom Blade Zero directory and choose the named region you are exploring. Its Crimson Forest map includes separate categories for bells, keys, quest items, weapons and characters, making it useful when you know what kind of object you need.",
+              "href": "/nav-04/maps-and-locations/"
+            },
+            {
+              "title": "Phantom Blade Zero Platinum: Protect Missables Before Cleanup",
+              "question": "Phantom Blade Zero’s platinum can be earned on any difficulty in one carefully planned playthrough. The trophy list has 36 trophies, but combat difficulty is not the main planning risk: several side tales can fail as the story advances. Keep separate manual saves, finish time-sensitive conversations promptly and prepare the true-ending route before committing to the finale.",
+              "href": "/nav-01/trophies-and-completion/"
+            }
+          ]
         }
       ]
     },
+    "popular": {
+      "badge": "Popular",
+      "title": "Most read",
+      "quickLinks": []
+    },
     "closingCta": {
-      "title": "Start your Anvil Quest Preview Guides journey",
-      "description": "Bookmark this wiki and check back after every game update.",
-      "primary": "Browse Guides",
-      "secondary": "Join the community",
-      "primaryHref": "/guides/"
+      "title": "Choose your next step",
+      "description": "Start with the guide that matches your current question.",
+      "primary": "Browse guides",
+      "secondary": "",
+      "images": [
+        "/images/game/carousel-01.jpg",
+        "/images/game/carousel-02.jpg"
+      ],
+      "primaryHref": "/nav-01/"
     },
     "hero": {
-      "badge": "Anvil Quest Preview Guides",
-      "title": "Anvil Quest Preview Guides Wiki",
-      "description": "Complete Anvil Quest Preview Guides guides — bosses, items, and progression.",
+      "badge": "",
+      "title": "Phantom Blade Zero",
+      "description": "Find the next step, prepare for the next fight, and choose where your journey goes.",
       "steamStats": {
         "rank": "Steam rank",
         "peak": "24H peak players",
@@ -239,108 +336,26 @@
         "noDeal": "No offer available",
         "off": "off"
       },
-      "ctaPrimary": "Start Reading",
-      "ctaSecondary": "Get Free Deals",
-      "videoId": "aqz-KE-bpKQ",
-      "videoCaption": "Template demo video — replace before publishing",
-      "ctaSecondaryHref": "/deals/"
+      "ctaPrimary": "Start reading",
+      "ctaSecondary": "Official game site",
+      "descriptionItems": [
+        {
+          "label": "The Wulin world",
+          "text": "Soul is a framed assassin in S-GAME’s wuxia action RPG. His search for the truth leads through a dark martial-arts world, where rival factions and old loyalties shape the conflict."
+        },
+        {
+          "label": "Blades, timing and exploration",
+          "text": "Explore connected regions, follow side tales and face demanding duels. Learn attack warnings, manage Sha-Chi, switch weapons and build a loadout around the openings you can use reliably."
+        }
+      ],
+      "videoId": "",
+      "videoCaption": "",
+      "ctaSecondaryHref": "https://pbz.s-game.com/en-US/"
     },
     "start": {
       "badge": "Quick start",
       "title": "New here?",
-      "cards": [
-        {
-          "key": "guides",
-          "description": "Browse walkthroughs and practical player guides.",
-          "image": "/images/home/guide-card.svg"
-        },
-        {
-          "key": "builds",
-          "description": "Compare builds and plan your next upgrade.",
-          "image": "/images/home/items-card.svg"
-        },
-        {
-          "key": "items",
-          "description": "Find item details and useful equipment.",
-          "image": "/images/home/items-card.svg"
-        },
-        {
-          "key": "maps",
-          "description": "Explore locations, routes, and discoveries.",
-          "image": "/images/home/reference-card.svg"
-        }
-      ]
-    },
-    "decisionGuide": {
-      "eyebrow": "Choose your route",
-      "title": "What should you do next?",
-      "description": "Pick the path that matches your current goal. Each route takes you to a focused set of guides instead of making you search the whole wiki.",
-      "routeLabel": "routes",
-      "groups": [
-        {
-          "label": "New player",
-          "directions": [
-            {
-              "title": "Learn the basics",
-              "question": "What should I understand before leaving the starting area?",
-              "href": "/guides/"
-            },
-            {
-              "title": "Choose an upgrade path",
-              "question": "Which early gear and resources are worth investing in?",
-              "href": "/guides/"
-            },
-            {
-              "title": "Prepare for the first boss",
-              "question": "What should I bring before my first serious fight?",
-              "href": "/bosses/"
-            }
-          ],
-          "image": "/images/home/decision-new.webp"
-        },
-        {
-          "label": "Currently progressing",
-          "directions": [
-            {
-              "title": "Clear the next progression wall",
-              "question": "Which boss, quest, or upgrade should I tackle next?",
-              "href": "/bosses"
-            },
-            {
-              "title": "Farm what you are missing",
-              "question": "Where can I get the materials needed for my next upgrade?",
-              "href": "/items/"
-            },
-            {
-              "title": "Fix a stalled build",
-              "question": "Which equipment or crafting decision is slowing me down?",
-              "href": "/items/"
-            }
-          ],
-          "image": "/images/home/decision-progress.webp"
-        },
-        {
-          "label": "Experienced player",
-          "directions": [
-            {
-              "title": "Review upgrade options",
-              "question": "Which crafting path fits my current materials?",
-              "href": "/guides/"
-            },
-            {
-              "title": "Farm more efficiently",
-              "question": "Which route gives the best return for repeat runs?",
-              "href": "/items/"
-            },
-            {
-              "title": "Push endgame content",
-              "question": "How do I prepare for the hardest encounters and rewards?",
-              "href": "/bosses/"
-            }
-          ],
-          "image": "/images/home/decision-endgame.webp"
-        }
-      ]
+      "cards": []
     },
     "explore": {
       "title": "Explore",
@@ -348,26 +363,26 @@
       "modules": [
         {
           "order": 1,
-          "name": "Getting started",
-          "description": "Step-by-step progression",
-          "href": "/guides",
-          "displayType": "steps",
+          "name": "Combat, routes and completion",
+          "description": "Choose a guide for your next Phantom Blade Zero decision.",
+          "href": "/nav-01/",
           "image": "/images/home/guide-card.svg",
+          "displayType": "steps",
           "highlights": [
             {
-              "label": "Step 1",
-              "detail": "Finish the tutorial",
-              "badge": "5 min"
+              "label": "Combat",
+              "detail": "Parries, dodges and Sha-Chi",
+              "badge": "Guide"
             },
             {
-              "label": "Step 2",
-              "detail": "Claim starter codes",
-              "badge": "1 min"
+              "label": "Progression",
+              "detail": "Crimson Forest and side tales",
+              "badge": "Route"
             },
             {
-              "label": "Step 3",
-              "detail": "First boss run",
-              "badge": "15 min"
+              "label": "Completion",
+              "detail": "Missables and the platinum plan",
+              "badge": "Checklist"
             }
           ]
         }
@@ -380,7 +395,7 @@
     }
   },
   "footer": {
-    "playGame": "Play Anvil Quest",
+    "playGame": "Play Phantom Blade Zero",
     "officialDiscord": "Official Discord",
     "officialYoutube": "Official YouTube",
     "officialTwitter": "Official Twitter",
@@ -391,7 +406,7 @@
     "termsOfService": "Terms of Service",
     "copyright": "Copyright",
     "contact": "Contact",
-    "copyrightText": "© 2026 Anvil Quest Preview Guides Wiki. All rights reserved.",
+    "copyrightText": "© 2026 Phantom Blade Zero Wiki. All rights reserved.",
     "community": "Community",
     "legal": "Legal"
   },

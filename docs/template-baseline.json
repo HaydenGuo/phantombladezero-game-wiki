@@ -2,7 +2,140 @@
   "schema_version": 1,
   "created_at": "2026-10-18T01:03:19.983Z",
   "source_template": "GameWikiSoleTemplate-vercel",
-  "allowed_deletions": [],
+  "allowed_deletions": [
+    {
+      "path": "public/images/showcase/demo-article.webp",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "public/images/showcase/demo-home.webp",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "public/images/showcase/demo-mobile.webp",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "public/images/showcase/sites/aniimo.jpg",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "public/images/showcase/sites/jjs-player-guide.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "public/images/showcase/sites/mortal-shell-ii.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "public/images/showcase/sites/nomanssky.jpg",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "public/images/showcase/sites/sephiria.jpg",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "public/images/showcase/sites/steal-anegg.jpg",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "public/images/wechat-qr.jpg",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/beginner-guide-cover.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/codes-cover.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/emberfang-cover.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/en-bosses-frostbound-monarch.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/en-guides-forging-guide.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/en-items-emberforged-armor-set.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/en-items-forging-materials-guide.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/stormcaller-cover.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/weapon-frostpike.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/weapon-tier-list-cover.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/assets/articles/weapon-voidforge.png",
+      "reason": "Explicit Stage 4 image-assets removal: Remove template-only demo/marketing image; target-game articles receive individually sourced, distinct covers."
+    },
+    {
+      "path": "src/config/landing.ts",
+      "reason": "Template project landing/demo asset removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/en/bosses/emberfang.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/en/bosses/frostbound-monarch.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/en/bosses/stormcaller.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/en/codes/all-codes.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/en/guides/beginner-guide.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/en/guides/forging-guide.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/en/guides/weapon-tier-list.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/en/items/emberforged-armor-set.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/en/items/forging-materials-guide.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/ja/bosses/emberfang.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    },
+    {
+      "path": "src/content/wiki/ja/codes/all-codes.mdx",
+      "reason": "Demo MDX removed by the single canonical apply-template initialization."
+    }
+  ],
   "files": [
     {
       "path": ".agent/skills/anvil-adsense-audit/SKILL.md",
