@@ -1,4 +1,4 @@
-import { cpSync, existsSync, readdirSync, readFileSync, mkdirSync } from 'node:fs';
+import { cpSync, existsSync, readdirSync, readFileSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join, resolve } from 'node:path';
 
 // Windows Vercel tracing can retain pnpm's real package files but omit the
@@ -29,6 +29,14 @@ function visit(directory) {
         copied += 1;
       }
     }
+    const configPath = join(current, '.vc-config.json');
+    const config = JSON.parse(readFileSync(configPath, 'utf8'));
+    // The CLI's self-referencing alias map must not replace the real directory
+    // during upload now that the package is materialized.
+    for (const [alias, target] of Object.entries(config.filePathMap ?? {})) {
+      if (alias === target && existsSync(join(current, alias))) delete config.filePathMap[alias];
+    }
+    writeFileSync(configPath, JSON.stringify(config, null, 2));
   }
 }
 if (!existsSync(root)) throw new Error('Vercel Functions output is missing');
